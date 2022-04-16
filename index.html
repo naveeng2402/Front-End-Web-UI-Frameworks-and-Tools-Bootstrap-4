@@ -50,8 +50,11 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center">
+                <div class="col-6 col-sm-3 align-self-center justify-content-center d-flex">
                     <img class="img-fluid" src="img/logo.png" alt="logo">
+                </div>
+                <div class="col-6 col-sm-3 align-self-center justify-content-center d-flex">
+                    <a href="#Form" class="btn btn-warning ps-4 pe-4 ps-xl-5 pe-xl-5">Reserve&nbsp;Table</a>
                 </div>
             </div>
         </div>
@@ -65,29 +68,37 @@
             <div class="col col-sm col-md">
                 <div class="d-flex">
                     <div class="flex-grow-1 me-3">
-                        <h2 class="mt-0">Uthappizza <span class="badge bg-danger">HOT</span> <span class="badge rounded-pill bg-secondary">$4.99</span></h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge bg-danger">HOT</span> <span
+                                class="badge rounded-pill bg-secondary">$4.99</span></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola
-                        olives,
-                        ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            olives,
+                            ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                     <div class="flex-shrink-0 align-self-center">
-                        <img src="img/uthappizza.png" alt="uthapizza"
-                          class="img-thumbnail">
+                        <img src="img/uthappizza.png" alt="uthapizza" class="img-thumbnail">
                     </div>
                 </div>
             </div>
         </div>
-
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3 order-sm-last">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md order-sm-first ">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
-                    six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
-                    $19.99 per person </p>
+                <div class="d-flex">
+                    <div class="flex-shrink-0 align-self-center">
+                        <img src="img/buffet.png" alt="buffet" class="img-thumbnail">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h2>Weekend Grand Buffet <span class="badge bg-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing
+                            appetizers,
+                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
+                            just
+                            $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -100,13 +111,72 @@
                     <div class="flex-grow-1">
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with
+                        <p>Award winning three-star Michelin chef with wide International experience having worked
+                            closely with
                             whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion
                             experiences. </p>
                     </div>
                     <div class="flex-shrink-0 align-self-center">
                         <img src="img/alberto.png" alt="alberto" class="img-thumbnail">
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mb-5 mt-5 col-12 col-md-8 offset-md-2" id="Form">
+                <h3 class="card-header bg-warning text-white">Reservation&nbsp;Form</h3>
+                <div class="card-body">
+                    <form class="container">
+                        <div class="form-group row mb-2">
+                            <div class="col-12 col-md-4">
+                                <label for="#" class="form-label mb-0">Number of Geusts &colon;</label>
+                            </div>
+                            <div class="col col-md">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="ng" id="ng1">
+                                    <label for="ng1" class="form-check-label">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="ng" id="ng2">
+                                    <label for="ng2" class="form-check-label">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="ng" id="ng3">
+                                    <label for="ng3" class="form-check-label">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="ng" id="ng4">
+                                    <label for="ng4" class="form-check-label">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="ng" id="ng5">
+                                    <label for="ng5" class="form-check-label">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="ng" id="ng6">
+                                    <label for="ng6" class="form-check-label">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12 col-md-4 d-flex align-items-center">
+                                <label for="#" class="form-label m-md-0 mt-2 mb-0">Date and Time &colon;</label>
+                            </div>
+                            <div class="col col-md">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" name="date" id="date" class="form-control" placeholder="Date">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" name="time" id="time" class="form-control" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-8 col-md-4 offset-2 offset-md-4"><button class="btn btn-primary w-100" type="submit">Reserve</button></div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
