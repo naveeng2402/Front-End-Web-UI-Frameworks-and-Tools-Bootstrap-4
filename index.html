@@ -18,12 +18,39 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="10" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row mb-2 ">
+                                <label for="uname" class="col-3 form-label">Username</label>
+                                <input id="uname" type="text" class="col-8 form-input">
+                        </div>
+                        <div class="form-group row ">
+                                <label for="pass" class="col-3 form-label">Password</label>
+                                <input id="pass" type="text" class="col-8 form-input">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
         <div class="container">
 
             <a href="./index.html" class="navbar-brand"><img src="img/logo.png" alt="logo" class="img-fluid" height="30"
                     width="41"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -38,9 +65,15 @@
                     <li class="nav item"><a href="./contactus.html" class="d-flex align-items-center nav-link"><i
                                 class="fa-solid fa-address-card me-1"></i>Contact</a></li>
                 </ul>
+                <!-- Button trigger modal -->
+                <a href="#" class="navbar-text text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fas fa-sign-in"></i>
+                    Login
+                </a>
             </div>
         </div>
     </nav>
+
 
     <header class="p-5 jumbotron rounded-bottom">
         <div class="container">
@@ -54,11 +87,15 @@
                     <img class="img-fluid" src="img/logo.png" alt="logo">
                 </div>
                 <div class="col-6 col-sm-3 align-self-center justify-content-center d-flex">
-                    <a href="#Form" class="btn btn-warning ps-4 pe-4 ps-xl-5 pe-xl-5">Reserve&nbsp;Table</a>
+                    <a href="#Form" class="btn btn-warning ps-4 pe-4 ps-xl-5 pe-xl-5" data-bs-toggle="tooltip"
+                        data-bs-html="true" title="Call us at +856412388"
+                        data-bs-placement="bottom">Reserve&nbsp;Table</a>
                 </div>
             </div>
         </div>
     </header>
+
+
 
     <div class="container">
         <div class="row row-content align-items-center">
@@ -165,16 +202,19 @@
                             <div class="col col-md">
                                 <div class="row">
                                     <div class="col-6">
-                                        <input type="text" name="date" id="date" class="form-control" placeholder="Date">
+                                        <input type="text" name="date" id="date" class="form-control"
+                                            placeholder="Date">
                                     </div>
                                     <div class="col-6">
-                                        <input type="text" name="time" id="time" class="form-control" placeholder="Time">
+                                        <input type="text" name="time" id="time" class="form-control"
+                                            placeholder="Time">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-8 col-md-4 offset-2 offset-md-4"><button class="btn btn-primary w-100" type="submit">Reserve</button></div>
+                            <div class="col-8 col-md-4 offset-2 offset-md-4"><button class="btn btn-primary w-100"
+                                    type="submit">Reserve</button></div>
                         </div>
                     </form>
                 </div>
@@ -227,13 +267,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 
 </body>
 
