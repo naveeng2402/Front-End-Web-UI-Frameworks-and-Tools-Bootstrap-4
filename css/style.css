@@ -54,3 +54,8 @@
     inset-inline: 0;
     inset-block-end:0;
 }
+
+#carousel-btns{
+    right: 0;
+    position: absolute;
+}
