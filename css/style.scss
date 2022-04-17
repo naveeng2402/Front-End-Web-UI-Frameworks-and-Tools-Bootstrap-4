@@ -1,0 +1,83 @@
+
+.modal-{
+    $modalHead: hsl(290, 100%, 24%);
+    $modalBody: hsl(290, 100%, 95%);
+    $modalFoot: hsl(290, 100%, 90%);
+    &header{
+        background-color: $modalHead;
+        color: floralwhite;
+    }
+    &body{
+        background-color: $modalBody;
+    }
+    &footer{
+        background-color: $modalFoot;
+    }
+}
+
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto;
+
+}
+
+.row-content{
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px ;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer{
+    background-color: #d1c4e9;
+    margin: 0px auto;
+    padding: 20px 0px;
+    background-color: rgb(198, 187, 209);
+}
+
+.jumbotron{
+    color: floralwhite;
+    background-color: blueviolet;
+}
+.address{
+    font-size: 80%;
+    margin: 0px;
+}
+
+.navbar-dark{
+    background-color: #512DA8;
+}
+
+.tab-content{
+    border-inline: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-inline: 3%;
+    padding-block: 2%;
+}
+
+
+.carousel-caption h5{
+    font-size: 250%;
+    font-weight: 900;
+}
+
+.carousel-caption p{
+    font-size: 125%;
+    font-weight: 600;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5);
+    inset-inline: 0;
+    inset-block-end:0;
+}
+
+#carousel-btns{
+    right: 0;
+    position: absolute;
+}
+
+#carousel-toggle{
+    position: absolute;
+    right: 0;
+}
