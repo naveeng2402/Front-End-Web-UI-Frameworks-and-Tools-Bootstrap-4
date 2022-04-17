@@ -37,3 +37,20 @@
     padding-inline: 3%;
     padding-block: 2%;
 }
+
+
+.carousel-caption h5{
+    font-size: 250%;
+    font-weight: 900;
+}
+
+.carousel-caption p{
+    font-size: 125%;
+    font-weight: 600;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5);
+    inset-inline: 0;
+    inset-block-end:0;
+}
