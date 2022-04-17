@@ -233,14 +233,9 @@
             <span class="visually-hidden">Next</span>
         </button>
 
-        <div class="btn-group" id="carousel-btns">
-            <button class="btn btn-danger btn-sm" id="carousel-pause">
-                <i class="fas fa-pause"></i>
-            </button>
-            <button class="btn btn-success btn-sm" id="carousel-play">
-                <i class="fas fa-play"></i>
-            </button>
-        </div>
+        <button class="btn btn-success btn-sm" id="carousel-toggle" data-state="cycle">
+            <i class="fas fa-play" id="carousel-toggle-icon"></i>
+        </button>
     </div>
 
     <div class="container">
@@ -362,11 +357,17 @@
             var myCarousel = document.querySelector('#carouselExampleIndicators')
             var carousel = new bootstrap.Carousel(myCarousel, {interval:200})
 
-            $('#carousel-pause').click(() =>{
-                carousel.pause();
-            });
-            $('#carousel-play').click(() =>{
-                carousel.cycle();
+            $('#carousel-toggle').click(() =>{
+                var state = $(this).data("state");
+                if (state === "pause"){
+                    carousel.cycle();
+                    $("#carousel-toggle-icon").removeClass("fa-play").addClass("fa-pause");
+                    $(this).data("state", "cycle");
+                } else {
+                    carousel.pause();
+                    $("#carousel-toggle-icon").removeClass("fa-pause").addClass("fa-play");
+                    $(this).data("state", "pause");
+                }                 
             });
 
         })

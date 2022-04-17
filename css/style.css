@@ -59,3 +59,8 @@
     right: 0;
     position: absolute;
 }
+
+#carousel-toggle{
+    position: absolute;
+    right: 0;
+}
